@@ -26,8 +26,9 @@ export class CreateUserUseCase {
     const findUserBySlugUseCase = new FindUserBySlugUseCase();
     const { user: userExists } = await findUserBySlugUseCase.execute({ slug });
 
+    console.log(userExists);
     if (userExists) {
-      throw new AppError("User already exists");
+      throw new AppError("Slug already exists");
     }
 
     const user = await prisma.user.create({
