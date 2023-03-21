@@ -19,10 +19,7 @@
     ],
     "rules": {
         "no-useless-constructor": "off",
-        "indent": [
-            "error",
-            "tab"
-        ],
+        "indent": "off",
         "linebreak-style": [
             "error",
             "windows"
