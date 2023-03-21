@@ -26,7 +26,6 @@ export class CreateUserUseCase {
     const findUserBySlugUseCase = new FindUserBySlugUseCase();
     const { user: userExists } = await findUserBySlugUseCase.execute({ slug });
 
-    console.log(userExists);
     if (userExists) {
       throw new AppError("Slug already exists");
     }
