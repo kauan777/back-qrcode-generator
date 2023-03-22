@@ -20,6 +20,8 @@
     "rules": {
         "no-useless-constructor": "off",
         "indent": "off",
+        "no-undef": "off",
+        "@typescript-eslint/no-var-requires": "off",
         "linebreak-style": [
             "error",
             "windows"
