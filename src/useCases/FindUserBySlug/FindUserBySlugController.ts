@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-import { AppError } from "../../errors/AppError";
 import { FindUserBySlugUseCase } from "./FindUserBySlugUseCase";
 
 export class FindUserbySlugController {
